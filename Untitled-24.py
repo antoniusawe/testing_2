@@ -14,6 +14,8 @@ import streamlit as st
 url = 'https://raw.githubusercontent.com/antoniusawe/testing_2/main/data%20karyawan%20aktif%20per%2026%20September%202024.csv'
 df = pd.read_csv(url, encoding='ISO-8859-1')
 
+df['Nik'] = df['Nik'].astype(str).str.replace(',', '')
+
 # Menampilkan judul di aplikasi Streamlit
 st.title("Data Karyawan Aktif per 26 September 2024")
 
