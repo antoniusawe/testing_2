@@ -11,7 +11,7 @@ import streamlit as st
 # In[9]:
 
 # Membaca file CSV dari tautan raw GitHub
-url = 'https://raw.githubusercontent.com/antoniusawe/testing_2/main/data%20karyawan%20aktif%20per%2026%20September%202024.csv'
+url = 'https://github.com/antoniusawe/testing_2/blob/main/data%20karyawan%20aktif%20per%2026%20September%202024.csv'
 df = pd.read_csv(url, encoding='ISO-8859-1')
 
 # Menampilkan judul di aplikasi Streamlit
