@@ -15,6 +15,7 @@ url = 'https://raw.githubusercontent.com/antoniusawe/testing_2/main/data%20karya
 df = pd.read_csv(url, encoding='ISO-8859-1')
 
 df['Nik'] = df['Nik'].astype(str).str.replace(',', '')
+df['Nik'] = df['Nik'].str.zfill(6)
 
 # Menampilkan judul di aplikasi Streamlit
 st.title("Data Karyawan Aktif per 26 September 2024")
