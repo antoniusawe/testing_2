@@ -11,7 +11,7 @@ import streamlit as st
 # In[9]:
 
 
-df = pd.read_csv(r"C:\Users\078220\Downloads\data karyawan aktif per 26 September 2024.csv", encoding='ISO-8859-1')
+df = pd.read_csv('https://github.com/antoniusawe/testing_2/blob/main/data%20karyawan%20aktif%20per%2026%20September%202024.csv', encoding='ISO-8859-1')
 
 
 # In[10]:
